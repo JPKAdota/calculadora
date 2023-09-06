@@ -5,7 +5,7 @@ from tkinter import ttk
 # Janela principal e cores
 co1 = "#feffff" #branca
 co2 = "#38576b"
-co3 = "ECEFF1" 
+co3 = "#ECEFF1" 
 co4 = "#FFAB40" #laranja
 
 fundo = "#3b3b3b" # preta
@@ -14,8 +14,6 @@ janela = Tk()
 janela.title('')
 janela.geometry('235x318')
 janela.configure(bg=co1)
-
-janela.mainloop()
 
 # Estilo da janela
 ttk.Separator(janela, orient = HORIZONTAL).grid(row=0, columnspan = 1, ipadx=280)
@@ -100,6 +98,9 @@ def limpar_tela():
     global todos_valores
     todos_valores = ""
     valor_texto.set("")
+
+janela.mainloop()
+
 
 
 
